@@ -1,43 +1,113 @@
+/* Configurações Gerais */
 :root {
-    --uenf-azul: #003366;
-    --texto: #2c3e50;
-    --fundo: #f8f9fa;
+    --primary-color: #2563eb; /* Azul Moderno */
+    --text-color: #1f2937;
+    --bg-color: #f9fafb;
+    --card-bg: #ffffff;
 }
 
 body {
-    font-family: 'Helvetica Neue', Arial, sans-serif;
-    background-color: var(--fundo);
-    color: var(--texto);
+    font-family: 'Inter', sans-serif;
+    background-color: var(--bg-color);
+    color: var(--text-color);
     line-height: 1.6;
     margin: 0;
-    padding: 0;
-}
-
-header {
-    background: var(--uenf-azul);
-    color: white;
-    padding: 40px 20px;
-    text-align: center;
-}
-
-section {
-    max-width: 900px;
-    margin: 30px auto;
     padding: 20px;
-    background: white;
-    border-radius: 8px;
-    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
 }
 
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    background: var(--card-bg);
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+}
+
+/* Header */
+header {
+    text-align: center;
+    border-bottom: 2px solid #edf2f7;
+    padding-bottom: 20px;
+    margin-bottom: 30px;
+}
+
+h1 {
+    margin: 0;
+    font-size: 2.2rem;
+    color: #111827;
+}
+
+.subtitle {
+    color: var(--primary-color);
+    font-weight: 600;
+    margin-top: 5px;
+}
+
+.social-links a {
+    margin: 0 10px;
+    text-decoration: none;
+    color: #4b5563;
+    font-size: 0.9rem;
+    transition: color 0.3s;
+}
+
+.social-links a:hover {
+    color: var(--primary-color);
+}
+
+/* Seções */
 h2 {
-    color: var(--uenf-azul);
-    border-bottom: 2px solid #eee;
-    padding-bottom: 10px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 1.4rem;
+    color: #111827;
+    border-left: 4px solid var(--primary-color);
+    padding-left: 15px;
+    margin-top: 30px;
+}
+
+/* Tags de Habilidades */
+.skill-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.skill-tags span {
+    background: #e5e7eb;
+    padding: 5px 15px;
+    border-radius: 20px;
+    font-size: 0.85rem;
+    font-weight: 500;
+}
+
+/* Cards de Experiência */
+.card {
+    background: #f3f4f6;
+    padding: 20px;
+    border-radius: 8px;
+    margin-top: 15px;
+}
+
+ul {
+    padding-left: 20px;
+}
+
+li {
+    margin-bottom: 8px;
 }
 
 footer {
     text-align: center;
-    padding: 20px;
-    font-size: 0.9em;
-    color: #7f8c8d;
+    margin-top: 40px;
+    font-size: 0.8rem;
+    color: #9ca3af;
+}
+
+/* Responsividade para Celular */
+@media (max-width: 600px) {
+    .container { padding: 20px; }
+    h1 { font-size: 1.6rem; }
 }
