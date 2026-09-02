@@ -3,104 +3,204 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Jorge Lucas | Desenvolvedor & Automação</title>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <title>Jorge Lucas | Engenharia & Automação</title>
+    <!-- Fontes e Ícones -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="container">
-        <header>
-            <h1>Jorge Lucas Ribeiro Clemente Gomes</h1>
-            <p class="subtitle">Desenvolvedor de Software | Especialista em Automação na UENF</p>
-            <div class="social-links">
-                <a href="#contact"><i class="fas fa-paper-plane"></i> Contato Profissional</a>
-                <a href="https://github.com/ribeirojorgelucas74-pixel" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i> GitHub</a>
-                <a href="https://www.linkedin.com/in/seu-perfil" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin"></i> LinkedIn</a>
+
+    <!-- Navegação Fixa -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="#" class="logo">&lt;JorgeLucas /&gt;</a>
+            <ul class="nav-links">
+                <li><a href="#about">Sobre</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#experience">Experiência</a></li>
+                <li><a href="#contact" class="btn-nav">Fale Comigo</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="main-container">
+        <!-- Hero Section -->
+        <header class="hero" id="about">
+            <div class="badge"><i class="fas fa-bolt"></i> Disponível para novos projetos</div>
+            <h1>Jorge Lucas R. C. Gomes</h1>
+            <p class="subtitle">Engenheiro de Controle & Automação | Desenvolvedor de Software</p>
+            <p class="hero-desc">
+                Especialista em transformar processos operacionais e manuais em sistemas escaláveis e automatizados. Atualmente impactando a gestão de dados na <strong>UENF</strong> com soluções em Python, SQL e JS.
+            </p>
+            
+            <div class="hero-buttons">
+                <a href="#contact" class="btn btn-primary"><i class="fas fa-paper-plane"></i> Iniciar Contato</a>
+                <a href="https://github.com/ribeirojorgelucas74-pixel" target="_blank" rel="noopener" class="btn btn-secondary"><i class="fab fa-github"></i> GitHub</a>
+                <a href="https://www.linkedin.com/in/seu-perfil" target="_blank" rel="noopener" class="btn btn-secondary"><i class="fab fa-linkedin"></i> LinkedIn</a>
+            </div>
+
+            <!-- Dashboard de Conquistas/Métricas -->
+            <div class="metrics-grid">
+                <div class="metric-card">
+                    <span class="metric-num">UENF</span>
+                    <span class="metric-label">Atuação Atual na PROGRAD</span>
+                </div>
+                <div class="metric-card">
+                    <span class="metric-num">2024</span>
+                    <span class="metric-label">Eng. Controle & Automação (IFF)</span>
+                </div>
+                <div class="metric-card">
+                    <span class="metric-num">100%</span>
+                    <span class="metric-label">Foco em Conformidade & Eficiência</span>
+                </div>
             </div>
         </header>
 
-        <main>
-            <section id="about">
-                <h2><i class="fas fa-user-tie"></i> Resumo Profissional</h2>
-                <p>Especialista em transformar processos manuais em sistemas eficientes. No apoio ao ensino na <strong>UENF</strong>, desenvolvo automações que gerenciam dados críticos de centenas de usuários com foco em segurança e conformidade regimental.</p>
-            </section>
-
-            <section id="skills">
-                <h2><i class="fas fa-laptop-code"></i> Tecnologias & Skills</h2>
-                <div class="skill-tags">
-                    <span>Python</span>
-                    <span>JavaScript</span>
-                    <span>Automação de Processos</span>
-                    <span>SQL / Banco de Dados</span>
-                    <span>Segurança de Dados</span>
+        <!-- Seção Tecnologias -->
+        <section id="skills" class="section">
+            <div class="section-header">
+                <h2><i class="fas fa-microchip gradient-text"></i> Tecnologias & Habilidades</h2>
+                <p>Ferramentas e linguagens para soluções de ponta a ponta</p>
+            </div>
+            
+            <div class="skills-grid">
+                <div class="skill-card">
+                    <i class="fab fa-python skill-icon"></i>
+                    <h3>Python</h3>
+                    <p>Automação de rotinas, scripts complexos e manipulação de dados.</p>
                 </div>
-            </section>
+                <div class="skill-card">
+                    <i class="fab fa-js-square skill-icon"></i>
+                    <h3>JavaScript</h3>
+                    <p>Interatividade Web e regras de negócio para sistemas dinâmicos.</p>
+                </div>
+                <div class="skill-card">
+                    <i class="fas fa-database skill-icon"></i>
+                    <h3>SQL / Bancos de Dados</h3>
+                    <p>Modelagem, consultas eficientes e integridade estrutural.</p>
+                </div>
+                <div class="skill-card">
+                    <i class="fas fa-cogs skill-icon"></i>
+                    <h3>Automação RPA</h3>
+                    <p>Otimização de fluxos de trabalho e eliminação de tarefas repetitivas.</p>
+                </div>
+                <div class="skill-card">
+                    <i class="fas fa-shield-alt skill-icon"></i>
+                    <h3>Segurança & Normas</h3>
+                    <p>Implementação de regras de negócio, LGPD e compliance institucional.</p>
+                </div>
+            </div>
+        </section>
 
-            <section id="experience">
-                <h2><i class="fas fa-briefcase"></i> Experiência de Impacto</h2>
-                <div class="card">
-                    <h3>Bolsista de Apoio ao Ensino — PROGRAD/UENF</h3>
-                    <p class="date">2025 - Presente</p>
-                    <ul>
-                        <li><strong>Gestão de Bolsistas:</strong> Automação da folha de pagamento e controle de vigência.</li>
-                        <li><strong>Controle de Outorga:</strong> Sistema de monitoramento de prazos e aditivos contratuais.</li>
-                        <li><strong>Conformidade:</strong> Implementação de regras de negócio via Resolução nº 02/2008.</li>
+        <!-- Seção Experiência -->
+        <section id="experience" class="section">
+            <div class="section-header">
+                <h2><i class="fas fa-briefcase gradient-text"></i> Experiência de Impacto</h2>
+            </div>
+
+            <div class="timeline">
+                <div class="timeline-card">
+                    <div class="card-header">
+                        <div>
+                            <h3>Bolsista de Apoio ao Ensino — PROGRAD/UENF</h3>
+                            <span class="role-tag">Universidade Estadual do Norte Fluminense</span>
+                        </div>
+                        <span class="badge-date">2025 - Presente</span>
+                    </div>
+                    <ul class="experience-list">
+                        <li><i class="fas fa-check-circle"></i> <strong>Gestão Automatizada de Bolsistas:</strong> Desenvolvimento de rotinas para controle de folha de pagamento e monitoramento de vigências.</li>
+                        <li><i class="fas fa-check-circle"></i> <strong>Controle de Outorga:</strong> Monitoramento contínuo de prazos regimentais e aditivos contratuais.</li>
+                        <li><i class="fas fa-check-circle"></i> <strong>Conformidade Regimental:</strong> Implementação estrita das diretrizes da Resolução nº 02/2008.</li>
                     </ul>
                 </div>
-            </section>
 
-            <section id="education">
-                <h2><i class="fas fa-graduation-cap"></i> Formação</h2>
-                <p><strong>Engenharia de Controle e Automação</strong> — IFFluminense (Concluído em 2024)</p>
-            </section>
+                <div class="timeline-card">
+                    <div class="card-header">
+                        <div>
+                            <h3>Engenharia de Controle e Automação</h3>
+                            <span class="role-tag">IFFluminense (Instituto Federal Fluminense)</span>
+                        </div>
+                        <span class="badge-date">Graduação (2024)</span>
+                    </div>
+                    <p class="academic-desc">Formação técnica sólida focada em sistemas de controle, programação estruturada, integração de sistemas e otimização de processos industriais e de software.</p>
+                </div>
+            </div>
+        </section>
 
-            <!-- SEÇÃO DE CONTATO PROFISSIONAL E SEGURA -->
-            <section id="contact">
-                <h2><i class="fas fa-envelope"></i> Contato Profissional</h2>
-                <p class="contact-subtitle">Para oportunidades de consultoria, colaboração acadêmica ou desenvolvimento de projetos de automação:</p>
-                
-                <div class="contact-wrapper">
-                    <form class="contact-form" action="https://formspree.io/f/SEU_FORM_ID" method="POST">
-                        <div class="form-group">
-                            <label for="name">Nome / Instituição</label>
-                            <input type="text" id="name" name="name" placeholder="Seu nome ou nome da empresa/instituição" required>
-                        </div>
-                        <div class="form-group">
-                            <label for="email">E-mail Profissional</label>
-                            <input type="email" id="email" name="email" placeholder="seuemail@dominio.com" required>
-                        </div>
-                        <div class="form-group">
-                            <label for="subject">Assunto</label>
-                            <input type="text" id="subject" name="_subject" placeholder="Ex: Proposta de Projeto / Automação de Processos" required>
-                        </div>
-                        <div class="form-group">
-                            <label for="message">Mensagem</label>
-                            <textarea id="message" name="message" rows="5" placeholder="Descreva brevemente a sua solicitação..." required></textarea>
-                        </div>
-                        <button type="submit" class="btn-submit"><i class="fas fa-paper-plane"></i> Enviar Mensagem</button>
-                    </form>
+        <!-- Seção Contato Profissional -->
+        <section id="contact" class="section">
+            <div class="section-header">
+                <h2><i class="fas fa-paper-plane gradient-text"></i> Contato Profissional</h2>
+                <p>Vamos conversar sobre projetos, consultorias ou oportunidades acadêmicas</p>
+            </div>
 
-                    <!-- CARTÃO DE CONTATO DIRETO -->
-                    <div class="contact-info">
-                        <div class="info-card">
-                            <i class="fas fa-envelope-open-text"></i>
+            <div class="contact-grid">
+                <!-- Formulário -->
+                <form class="contact-form" action="https://formspree.io/f/SEU_FORM_ID" method="POST">
+                    <div class="form-group">
+                        <label for="name">Seu Nome / Instituição</label>
+                        <input type="text" id="name" name="name" placeholder="Ex: Maria Silva / Empresa XYZ" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">E-mail para Retorno</label>
+                        <input type="email" id="email" name="email" placeholder="nome@dominio.com" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="subject">Assunto</label>
+                        <input type="text" id="subject" name="_subject" placeholder="Ex: Proposta de Automação / Consultoria" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Mensagem</label>
+                        <textarea id="message" name="message" rows="4" placeholder="Descreva brevemente como posso ajudar..." required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-block"><i class="fas fa-paper-plane"></i> Enviar Mensagem</button>
+                </form>
+
+                <!-- Cards Laterais de Contato -->
+                <div class="contact-sidebar">
+                    <div class="info-box">
+                        <div class="info-icon"><i class="fas fa-envelope"></i></div>
+                        <div>
                             <h4>E-mail Direto</h4>
-                            <p><a href="mailto:ribeirojorgelucas74@gmail.com" class="email-link">ribeirojorgelucas74@gmail.com</a></p>
+                            <p class="email-text">ribeirojorgelucas74@gmail.com</p>
+                            <button class="btn-copy" onclick="copyEmail()"><i class="far fa-copy"></i> Copiar E-mail</button>
                         </div>
-                        <div class="info-card">
-                            <i class="fas fa-clock"></i>
+                    </div>
+
+                    <div class="info-box">
+                        <div class="info-icon"><i class="fas fa-map-marker-alt"></i></div>
+                        <div>
+                            <h4>Localização</h4>
+                            <p>Campos dos Goytacazes, RJ — Brasil</p>
+                        </div>
+                    </div>
+
+                    <div class="info-box">
+                        <div class="info-icon"><i class="fas fa-clock"></i></div>
+                        <div>
                             <h4>Atendimento</h4>
-                            <p>Segunda a Sexta, em horário comercial.</p>
+                            <p>Segunda a Sexta (Horário Comercial)</p>
                         </div>
                     </div>
                 </div>
-            </section>
-        </main>
+            </div>
+        </section>
 
+        <!-- Footer -->
         <footer>
-            <p>Desenvolvido por Jorge Lucas © 2026</p>
+            <p>© 2026 Jorge Lucas R. C. Gomes • Construído com foco em alta performance</p>
         </footer>
     </div>
+
+    <!-- Script Simples para Copiar E-mail -->
+    <script>
+        function copyEmail() {
+            navigator.clipboard.writeText('ribeirojorgelucas74@gmail.com');
+            alert('E-mail copiado para a área de transferência!');
+        }
+    </script>
 </body>
 </html>
