@@ -108,3 +108,14 @@
     color: #64748b;
     line-height: 1.4;
 }
+
+.email-link {
+    color: #003366;
+    font-weight: 600;
+    text-decoration: none;
+    word-break: break-all;
+}
+
+.email-link:hover {
+    text-decoration: underline;
+}
